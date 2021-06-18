@@ -1,0 +1,10 @@
+.add-note {
+    width: 69%;
+    margin-top: 20px;
+    margin-left: 15px;
+    box-shadow: 3px 3px 10px 0;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+
