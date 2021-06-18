@@ -15,7 +15,8 @@ class AppAddNote extends Component {
 
 
    handleSubmit = (event) => {
-
+      console.log("veikia")
+      event.preventDefault();
       this.props.onNewNote(this.state.newNote)
    }
 
@@ -29,10 +30,10 @@ class AppAddNote extends Component {
       return (
           <div className="add-note">
              <Form
-                 onSubmit={this.handleSubmit}
                  autoComplete="off"
                  render={(formRenderProps) => (
-                     <FormElement style={{maxWidth: 250}}>
+                     <FormElement onSubmit={this.handleSubmit}
+                                  style={{maxWidth: 250}}>
                         <fieldset className={"k-form-fieldset"}>
                            <legend className={"k-form-legend"}>
                               Please fill in the fields:
@@ -62,7 +63,6 @@ class AppAddNote extends Component {
                            <button
                                type="submit"
                                className="k-button"
-                               disabled={formRenderProps.allowSubmit}
                            >
                               Submit
                            </button>
