@@ -7,16 +7,16 @@ class AppNavbar extends Component {
    render() {
       return (
           <header className="navbar">
-        <a href="/">
-          <strong>Keep</strong>Clone
-        </a>
-        <div className="search">
-          <input type="search" placeholder="Search" />
-        </div>
-        <div>
-          <i className="fa fa-pencil"></i>
-        </div>
-      </header>
+             <a href="/">
+                <strong>Keep</strong>Clone
+             </a>
+             <div className="search">
+                <input type="search" placeholder="Search"/>
+             </div>
+             <div>
+                <i className="fa fa-pencil"></i>
+             </div>
+          </header>
       );
    }
 }

@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import linkStyle from "./myLink.module.css"
 
 class MyLink extends Component {
    state = {}
@@ -6,7 +7,10 @@ class MyLink extends Component {
    render() {
       return (
           <div>
-             icon pavadinimas
+             <a className={this.props.active ? linkStyle.active : linkStyle.link} href="/">
+                <i className={`fa fa-${this.props.icon}`}></i>
+                {this.props.children}
+             </a>
           </div>
       );
    }

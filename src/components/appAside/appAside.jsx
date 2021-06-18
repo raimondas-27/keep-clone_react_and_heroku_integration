@@ -1,11 +1,19 @@
 import React, { Component } from 'react';
+import MyLink from "../common/myLink/myLink";
 
 class AppAside extends Component {
   state = {};
   render() {
     return (
       <div className="aside">
-        <h2>Aside</h2>
+        <div>
+           <MyLink active icon="home" to="/">
+              Home
+           </MyLink>
+           <MyLink icon="bell" to="/reminders">
+              Reminders
+           </MyLink>
+        </div>
       </div>
     );
   }
