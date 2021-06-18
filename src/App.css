@@ -1,3 +1,35 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+div {
+  /*border: 1px solid #000;*/
+}
+
+.navbar {
+  grid-area: header;
+}
+.aside {
+  grid-area: aside;
+}
+.add-note {
+  grid-area: add-note;
+}
+.note-list {
+  grid-area: note-list;
+}
+
 .App {
-  border: 1px solid black;
+  max-width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas:
+    'header header header header header'
+    'aside add-note add-note add-note add-note '
+    'aside note-list note-list note-list note-list ';
 }

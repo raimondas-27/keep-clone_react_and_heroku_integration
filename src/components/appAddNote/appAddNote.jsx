@@ -1,15 +1,14 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 class AppAddNote extends Component {
-   state = {}
-
-   render() {
-      return (
-          <div>
-             <h2> app add note</h2>
-          </div>
-      );
-   }
+  state = {};
+  render() {
+    return (
+      <div className="add-note">
+        <h2>AddNote</h2>
+      </div>
+    );
+  }
 }
 
 export default AppAddNote;
